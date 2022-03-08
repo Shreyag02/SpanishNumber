@@ -59,10 +59,9 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={tw`flex-1 bg-slate-900`}>
-      <ScrollView
-        contentContainerStyle={tw`flex-1 justify-center items-center`}>
-        <Image source={logo} />
+    <ScrollView contentContainerStyle={tw`flex-1`}>
+      <SafeAreaView style={tw`flex-1 bg-slate-900`}>
+        <Image source={logo} style={tw`self-center`} />
 
         <View
           style={tw`flex-1 flex-row flex-wrap items-start justify-around m-2 p-2`}>
@@ -77,8 +76,8 @@ const App = () => {
             </TouchableOpacity>
           ))}
         </View>
-      </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScrollView>
   );
 };
 
